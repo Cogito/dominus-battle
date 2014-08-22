@@ -17,7 +17,7 @@ Battle = {
 			battle.isOver = true
 			battle.endBattle()
 		} else {
-			battle.setAllAmyInfo()
+			battle.setAllArmyInfo()
 			battle.findAllEnemies()
 			battle.setAllEnemyInfo()
 			battle.dividePowerByNumEnemies_all()
@@ -197,7 +197,7 @@ Fight = function(x, y) {
 
 
 	// set power and number of units in the army
-	this.setAllAmyInfo = function() {
+	this.setAllArmyInfo = function() {
 		var self = this
 		self.setArmyInfo(self.defender)
 		_.each(self.attackers, function(attacker) {
